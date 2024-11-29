@@ -1,7 +1,13 @@
-#!/usr/bin/env python3
-
+# lib/person.py
 class Person:
-    # Class body goes here
+    def talk(self):
+        print("Hello World!")
+        
+    def walk(self):
+        print("The person is walking.")
 
-    #Instance method definition
-    pass
+# Test the Person class
+if __name__ == "__main__":
+    john = Person()
+    john.talk()  # Should print "Hello World!"
+    john.walk()  # Should print "The person is walking."
